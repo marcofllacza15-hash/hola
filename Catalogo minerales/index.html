@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catálogo Mineralógico</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#121212;
+    color:#f5f5dc;
+    font-family:Segoe UI,sans-serif;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    color:#d4af37;
+}
+
+#buscador{
+    width:80%;
+    max-width:500px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+    padding:30px;
+}
+
+.card{
+
+    background:#1e293b;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 15px rgba(212,175,55,.4);
+
+}
+
+.card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    color:#d4af37;
+
+}
+
+.detalle{
+
+    display:none;
+
+    padding:15px;
+
+}
+
+.detalle p{
+
+    margin:8px 0;
+
+}
+
+strong{
+
+    color:#3cb371;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CATÁLOGO MINERALÓGICO</h1>
+
+<input
+type="text"
+id="buscador"
+placeholder="Buscar mineral..."
+>
+
+</header>
+
+<div class="grid" id="catalogo">
+<div class="card">
+
+<img src="imagenes/jaspe_rojo.jpg">
+
+<h2>Jaspe Rojo</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-01</p>
+
+<p><strong>Origen:</strong> Sedimentario / Hidrotermal por sustitución coloidal</p>
+
+<p><strong>Distribución:</strong> Brasil, India, Sudáfrica, Madagascar, EE.UU.</p>
+
+<p><strong>Textura:</strong> Criptocristalina, granular muy fina, compacta</p>
+
+<p><strong>Composición:</strong> SiO₂ con hasta 20% de impurezas (Fe₂O₃)</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Rojo ladrillo, rojo pardo</p>
+
+<p><strong>Tipo de roca:</strong> Sedimentaria silícea</p>
+
+<p><strong>Clase:</strong> 04.DA.05 (Óxidos)</p>
+
+<p><strong>Uso:</strong> Joyería lapidaria, objetos ornamentales y abrasivos menores</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Ica, Ayacucho, Cusco</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/amatista.jpg">
+
+<h2>Amatista</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-02</p>
+
+<p><strong>Origen:</strong> Magmático e hidrotermal rellenando geodas</p>
+
+<p><strong>Distribución:</strong> Brasil, Uruguay, Madagascar, Zambia</p>
+
+<p><strong>Textura:</strong> Macrocristalina</p>
+
+<p><strong>Composición:</strong> SiO₂ con trazas de hierro</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Violeta</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Alta gemología y joyería</p>
+
+<p><strong>Ubicación:</strong> Huánuco, Pasco, Junín, Puno, Cusco</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="imagenes/jaspe_verde.jpg">
+
+<h2>Jaspe Verde</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-03</p>
+
+<p><strong>Origen:</strong> Precipitación hidrotermal</p>
+
+<p><strong>Distribución:</strong> Alemania, India, Rusia, Estados Unidos</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Verde oliva</p>
+
+<p><strong>Uso:</strong> Objetos ornamentales y revestimientos</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Ayacucho, Cusco</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_cristal.jpg">
+
+<h2>Cuarzo Cristal de Roca</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-04</p>
+
+<p><strong>Origen:</strong> Hidrotermal y magmático tardío en pegmatitas</p>
+
+<p><strong>Distribución:</strong> Brasil, Estados Unidos, Suiza</p>
+
+<p><strong>Textura:</strong> Macrocristalina, euhedral, vítrea</p>
+
+<p><strong>Composición:</strong> SiO₂ ≥ 99.9%</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Incoloro, transparente</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea, metamórfica y sedimentaria</p>
+
+<p><strong>Clase:</strong> 04.DA.05 (Óxidos)</p>
+
+<p><strong>Uso:</strong> Osciladores piezoeléctricos, óptica avanzada y semiconductores</p>
+
+<p><strong>Ubicación:</strong> Junín, Pasco, Huancavelica, Áncash, Puno, Cusco, Huánuco</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/calcedonia.jpg">
+
+<h2>Calcedonia</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-05</p>
+
+<p><strong>Origen:</strong> Volcánico tardío y sedimentario</p>
+
+<p><strong>Distribución:</strong> Namibia, Turquía, India, Islandia, Brasil</p>
+
+<p><strong>Textura:</strong> Microcriptocristalina fibrosa</p>
+
+<p><strong>Composición:</strong> Mezcla de cuarzo y moganita</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Blanco, gris, azul claro</p>
+
+<p><strong>Tipo de roca:</strong> Sedimentaria e ígnea</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Gemas, componentes mecánicos y morteros</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Ica, Ayacucho, Moquegua</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/agata.jpg">
+
+<h2>Ágata</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-06</p>
+
+<p><strong>Origen:</strong> Pulsos hidrotermales cíclicos</p>
+
+<p><strong>Distribución:</strong> Alemania, Uruguay, Brasil, México</p>
+
+<p><strong>Textura:</strong> Criptocristalina bandeada</p>
+
+<p><strong>Composición:</strong> SiO₂ con bandas coloreadas por óxidos metálicos</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Multicolor</p>
+
+<p><strong>Tipo de roca:</strong> Volcánica</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Morteros resistentes y baldosas decorativas</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Moquegua, Tacna, Ica</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/citrino.jpg">
+
+<h2>Citrino</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-07</p>
+
+<p><strong>Origen:</strong> Magmático e hidrotermal</p>
+
+<p><strong>Distribución:</strong> Brasil, Rusia, España</p>
+
+<p><strong>Textura:</strong> Macrocristalina</p>
+
+<p><strong>Composición:</strong> SiO₂ con hierro</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Amarillo dorado</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Gemología y coleccionismo</p>
+
+<p><strong>Ubicación:</strong> Junín, Pasco, Huánuco</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/citrino.jpg">
+
+<h2>Citrino</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-07</p>
+
+<p><strong>Origen:</strong> Magmático e hidrotermal</p>
+
+<p><strong>Distribución:</strong> Brasil, Rusia, España</p>
+
+<p><strong>Textura:</strong> Macrocristalina</p>
+
+<p><strong>Composición:</strong> SiO₂ con hierro</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Amarillo dorado</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Gemología y coleccionismo</p>
+
+<p><strong>Ubicación:</strong> Junín, Pasco, Huánuco</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cornalina.jpg">
+
+<h2>Cornalina</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-08</p>
+
+<p><strong>Origen:</strong> Enriquecimiento supergénico</p>
+
+<p><strong>Distribución:</strong> India, Brasil, Uruguay, Egipto</p>
+
+<p><strong>Textura:</strong> Criptocristalina</p>
+
+<p><strong>Composición:</strong> SiO₂ con hematita</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Anaranjado rojizo</p>
+
+<p><strong>Tipo de roca:</strong> Sedimentaria</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Joyería y grabado lapidario</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Ica, Ayacucho</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_rosado.jpg">
+
+<h2>Cuarzo Rosado</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-09</p>
+
+<p><strong>Origen:</strong> Cristalización magmática tardía</p>
+
+<p><strong>Distribución:</strong> Madagascar, Brasil, Estados Unidos, Namibia</p>
+
+<p><strong>Textura:</strong> Macrocristalina masiva</p>
+
+<p><strong>Composición:</strong> SiO₂ con titanio y manganeso</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Rosa pálido a intenso</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Escultura, joyería y tallado ornamental</p>
+
+<p><strong>Ubicación:</strong> Puno, Cusco, Junín</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/agata_negra.jpg">
+
+<h2>Ágata Negra</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-10</p>
+
+<p><strong>Origen:</strong> Epitermal y volcánico</p>
+
+<p><strong>Distribución:</strong> Brasil, Madagascar, México, Estados Unidos</p>
+
+<p><strong>Textura:</strong> Criptocristalina compacta</p>
+
+<p><strong>Composición:</strong> SiO₂ con óxidos de hierro y carbono</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Negro profundo</p>
+
+<p><strong>Tipo de roca:</strong> Volcánica y sedimentaria</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Artículos decorativos y joyería</p>
+
+<p><strong>Ubicación:</strong> Sin yacimientos importantes documentados</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/opalo_andino.jpg">
+
+<h2>Ópalo Andino</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-11</p>
+
+<p><strong>Origen:</strong> Sedimentario y alteración supergénica a partir de aguas ricas en sílice.</p>
+
+<p><strong>Distribución:</strong> Arequipa (Perú) y Andes chilenos.</p>
+
+<p><strong>Textura:</strong> Amorfa, masiva, botroidal o nodular.</p>
+
+<p><strong>Composición:</strong> SiO₂·nH₂O con inclusiones de cobre.</p>
+
+<p><strong>Dureza:</strong> 5.5 - 6.5</p>
+
+<p><strong>Color:</strong> Azul neón, azul verdoso, verde azulado o rosa pálido.</p>
+
+<p><strong>Tipo de roca:</strong> Sedimentaria silícea.</p>
+
+<p><strong>Clase:</strong> 04.DA.10</p>
+
+<p><strong>Uso:</strong> Alta joyería y cabujones.</p>
+
+<p><strong>Ubicación:</strong> Arequipa, Huánuco, Ica.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_lechoso.jpg">
+
+<h2>Cuarzo Lechoso</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-12</p>
+
+<p><strong>Origen:</strong> Magmático y metamórfico.</p>
+
+<p><strong>Distribución:</strong> Mundial.</p>
+
+<p><strong>Textura:</strong> Macrocristalina.</p>
+
+<p><strong>Composición:</strong> SiO₂ con inclusiones fluidas microscópicas.</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Blanco lechoso.</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea, metamórfica y sedimentaria.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Silicio puro, paneles solares y ferrosilicio.</p>
+
+<p><strong>Ubicación:</strong> Junín, Pasco, Áncash, Huancavelica y Cusco.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/crisoprasa.jpg">
+
+<h2>Crisoprasa</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-13</p>
+
+<p><strong>Origen:</strong> Alteración supergénica de rocas ultramáficas.</p>
+
+<p><strong>Distribución:</strong> Australia, Polonia, Kazajistán y Brasil.</p>
+
+<p><strong>Textura:</strong> Criptocristalina granular fina.</p>
+
+<p><strong>Composición:</strong> SiO₂ con inclusiones de níquel.</p>
+
+<p><strong>Dureza:</strong> 6.5 - 7</p>
+
+<p><strong>Color:</strong> Verde manzana brillante.</p>
+
+<p><strong>Tipo de roca:</strong> Sedimentos de meteorización laterítica.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Gemas de colección y sustituto del jade.</p>
+
+<p><strong>Ubicación:</strong> Sin yacimientos importantes documentados.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/ojo_tigre.jpg">
+
+<h2>Ojo de Tigre</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-14</p>
+
+<p><strong>Origen:</strong> Metamorfismo hidrotermal.</p>
+
+<p><strong>Distribución:</strong> Sudáfrica, Australia e India.</p>
+
+<p><strong>Textura:</strong> Fibrosa con chatoyancia.</p>
+
+<p><strong>Composición:</strong> SiO₂ con goethita y limonita.</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Amarillo, dorado y marrón.</p>
+
+<p><strong>Tipo de roca:</strong> Metamórfica.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Esferas, cabujones y joyería ornamental.</p>
+
+<p><strong>Ubicación:</strong> Sin yacimientos conocidos.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_cristal_ampliacion.jpg">
+
+<h2>Cuarzo Cristal HPQ</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-15</p>
+
+<p><strong>Origen:</strong> Hidrotermal y pegmatítico.</p>
+
+<p><strong>Distribución:</strong> Francia, Estados Unidos, Brasil y Perú.</p>
+
+<p><strong>Textura:</strong> Cristales hexagonales euhedrales.</p>
+
+<p><strong>Composición:</strong> SiO₂ > 99.9 %.</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Transparente.</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea y metamórfica.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Semiconductores, láseres y tecnología solar.</p>
+
+<p><strong>Ubicación:</strong> Junín, Pasco, Huancavelica, Áncash, Puno, Cusco y Huánuco.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_ahumado.jpg">
+
+<h2>Cuarzo Ahumado</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-16</p>
+
+<p><strong>Origen:</strong> Magmático tardío sometido a radiación natural.</p>
+
+<p><strong>Distribución:</strong> Suiza, Escocia, Brasil y Estados Unidos.</p>
+
+<p><strong>Textura:</strong> Macrocristalina vítrea.</p>
+
+<p><strong>Composición:</strong> SiO₂ con aluminio activado por radiación.</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Gris humo a marrón oscuro.</p>
+
+<p><strong>Tipo de roca:</strong> Ígnea.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Óptica especializada y joyería.</p>
+
+<p><strong>Ubicación:</strong> Puno, Cusco, Junín y Pasco.</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<img src="imagenes/cuarzo_azul.jpg">
+
+<h2>Cuarzo Azul</h2>
+
+<div class="detalle">
+
+<p><strong>Código:</strong> MC-17</p>
+
+<p><strong>Origen:</strong> Metamorfismo regional o de contacto.</p>
+
+<p><strong>Distribución:</strong> Estados Unidos, Brasil, Colombia y Austria.</p>
+
+<p><strong>Textura:</strong> Macrocristalina granular.</p>
+
+<p><strong>Composición:</strong> SiO₂ con inclusiones de dumortierita.</p>
+
+<p><strong>Dureza:</strong> 7</p>
+
+<p><strong>Color:</strong> Azul grisáceo.</p>
+
+<p><strong>Tipo de roca:</strong> Metamórfica.</p>
+
+<p><strong>Clase:</strong> 04.DA.05</p>
+
+<p><strong>Uso:</strong> Revestimientos y piedra ornamental.</p>
+
+<p><strong>Ubicación:</strong> Cusco, Puno y Junín.</p>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+document.querySelectorAll('.card').forEach(card=>{
+
+card.addEventListener('click',()=>{
+
+const detalle = card.querySelector('.detalle');
+
+if(detalle.style.display==="block"){
+detalle.style.display="none";
+}else{
+detalle.style.display="block";
+}
+
+});
+
+});
+
+document.getElementById('buscador').addEventListener('keyup',function(){
+
+let texto=this.value.toLowerCase();
+
+document.querySelectorAll('.card').forEach(card=>{
+
+let nombre=card.querySelector('h2').innerText.toLowerCase();
+
+card.style.display=
+nombre.includes(texto)
+? 'block'
+: 'none';
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
